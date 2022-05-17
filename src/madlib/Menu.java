@@ -7,8 +7,16 @@ import java.nio.file.*;
 
 public class Menu {
 	
+	/***
+	 * Scanner object for Menu class
+	 */
 	private static Scanner sc = new Scanner(System.in);
 	
+	/***
+	 * Write Madlib from command line and user input
+	 * @param None
+	 * @return None
+	 */
 	public static void fromCL() {
 		//Get user entered string
 		System.out.println();
@@ -32,6 +40,11 @@ public class Menu {
 		System.out.println();
 	}
 	
+	/***
+	 * Write Madlib from file
+	 * @param None
+	 * @return None
+	 */
 	public static void fromFile() {
 		//Get filename and read from file
 		System.out.println();
@@ -84,6 +97,11 @@ public class Menu {
 		System.out.println();
 	}
 	
+	/***
+	 * Prints format guidelines to command line
+	 * @param None
+	 * @return None
+	 */
 	public static void format() {
 		//This just prints the format screen
 		System.out.println();

@@ -12,8 +12,16 @@ import org.json.*;
 
 public class Helpers {
 	
+	/***
+	 * Scanner object for Helpers class
+	 */
 	private static Scanner sc = new Scanner(System.in);
 	
+	/***
+	 * Gets choice from user, holds until choice is within correct bounds
+	 * @param None
+	 * @return userChoice that is bounded right
+	 */
 	public static int getChoice() {
 		boolean looper = true;
 		int choice = -1;
@@ -41,6 +49,11 @@ public class Helpers {
 		return(choice);
 	}
 	
+	/***
+	 * Calls API and returns string of JSON
+	 * @param wordType, that is nouns, adjs, or verbs for respective body needed
+	 * @return String of JSON containing all words with specified type
+	 */
 	public static String callApi(String wordType) {
 		//Default string phrase
 		String myPhrase = "Not full!";
@@ -63,6 +76,11 @@ public class Helpers {
 		return(myPhrase);
 	}
 	
+	/***
+	 * Converts JSON array to arrayList of strings with each word
+	 * @param words JSONArray with each key value word
+	 * @return ArrayList of Strings with each word from the JSON in there
+	 */
 	public static ArrayList<String> jsonToArray(JSONArray words) {
 		//Create string array list
 		ArrayList<String> wordList = new ArrayList<String>();
@@ -77,6 +95,11 @@ public class Helpers {
 		return(wordList);
 	}
 	
+	/***
+	 * Uses callAPI and jsonToArray to replace every word in the String array
+	 * @param userArray of unreplaced Madlib String
+	 * @return String array with Madlib'd words correctly replaced
+	 */
 	public static String[] replaceWords(String userArray[]) {
 		//Get ArrayList of words for each type
 		JSONArray nounJson = new JSONArray(callApi("nouns"));
