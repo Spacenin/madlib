@@ -23,7 +23,6 @@ public class Helpers {
 	
 	/***
 	 * Gets choice from user, holds until choice is within correct bounds
-	 * @param None
 	 * @return userChoice that is bounded right
 	 */
 	public static int getChoice() {
