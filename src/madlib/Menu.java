@@ -5,6 +5,10 @@ import java.util.Scanner;
 import java.io.*;
 import java.nio.file.*;
 
+/***
+ * Static functions for each menu option.
+ * @author cheps
+ */
 public class Menu {
 	
 	/***

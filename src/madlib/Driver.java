@@ -1,7 +1,15 @@
 package madlib;
 
+/***
+ * Main driver of program
+ * @author cheps
+ */
 public class Driver {
-
+	
+	/***
+	 * Where the magic happens ~~~''~~~
+	 * @param args from command line (not utilized)
+	 */
 	public static void main(String[] args) {
 		boolean looper = true;
 		

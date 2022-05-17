@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.Random;
 import org.json.*;
 
+/***
+ * Contains series of static functions that are repeated throughout code
+ * @author cheps
+ */
 public class Helpers {
 	
 	/***
