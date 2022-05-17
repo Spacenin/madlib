@@ -14,8 +14,6 @@ public class Menu {
 	
 	/***
 	 * Write Madlib from command line and user input
-	 * @param None
-	 * @return None
 	 */
 	public static void fromCL() {
 		//Get user entered string
@@ -42,8 +40,6 @@ public class Menu {
 	
 	/***
 	 * Write Madlib from file
-	 * @param None
-	 * @return None
 	 */
 	public static void fromFile() {
 		//Get filename and read from file
@@ -99,8 +95,6 @@ public class Menu {
 	
 	/***
 	 * Prints format guidelines to command line
-	 * @param None
-	 * @return None
 	 */
 	public static void format() {
 		//This just prints the format screen
